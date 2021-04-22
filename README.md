@@ -10,7 +10,7 @@ Xfce desktop customization
 
 ![Light theme](screenshots/light.png)
 
-### Dark theme with grid icons
+### Dark theme with grid icon
 
 ![Dark theme](screenshots/dark.png)
 
