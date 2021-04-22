@@ -4,8 +4,6 @@
 
 Xfce desktop customization
 
-[TOC]
-
 ## Overview
 
 ### Light theme with windows icon
