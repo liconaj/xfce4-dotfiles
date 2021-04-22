@@ -1,0 +1,45 @@
+#!/bin/sh
+
+
+if [ "$EUID" == "0" ]; then
+	ICONS_DIR="/usr/share/icons"
+else
+	ICONS_DIR="$HOME/.local/share/icons"
+fi
+
+WHISKER_CONFIGURATION_FILE="$HOME/.config/xfce4/panel/whiskermenu-1.rc"
+sed -i 's/button-icon=.*/button-icon=start-here/' $WHISKER_CONFIGURATION_FILE
+
+patch_papirus() {
+	ICONS=$ICONS_DIR/$1/16x16/panel
+	[ -f $ICONS/start-here.svg ] && rm -r $ICONS/start-here.svg
+	ln -s $ICONS/start-here-${2}.svg $ICONS/start-here.svg
+}
+
+
+patch() {
+	patch_papirus Papirus $1
+	patch_papirus Papirus-Light $1
+	patch_papirus Papirus-Dark $1
+}
+
+case "$1" in
+
+	grid)
+		patch big
+	;;
+
+	win)	
+		patch windows
+	;;
+
+	*)
+	echo "Options"
+	echo " - grid"
+	echo " - win"
+	exit $1
+
+esac
+
+# Restart xfce4 pane
+xfce4-panel -r

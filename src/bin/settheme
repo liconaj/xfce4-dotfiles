@@ -1,0 +1,53 @@
+#!/bin/sh
+
+
+
+LIGHT="Lim-Blue"
+DARK="Lim-Blue-Dark"
+
+LIGHT_ICONS="Papirus-Light"
+DARK_ICONS="Papirus-Dark"
+
+terminal_bright() {
+	CONFIG_FILE=$HOME/.config/xfce4/terminal/terminalrc
+	grep -qwF ColorBoldIsBright $CONFIG_FILE
+	noexists=$(echo $?)
+	if [ "$noexists" == "1" ]; then
+		echo "ColorBoldIsBright=FALSE" >> $CONFIG_FILE
+	fi
+	if [ "$1" == "TRUE"  ]; then
+		sed -i 's/ColorBoldIsBright=.*/ColorBoldIsBright=TRUE/' $CONFIG_FILE
+	else
+		sed -i 's/ColorBoldIsBright=.*/ColorBoldIsBright=FALSE/' $CONFIG_FILE
+	fi
+}
+
+change_theme() {
+	xfconf-query -c xsettings -p /Net/ThemeName -t string -s $1
+	xfconf-query -c xfwm4 -p /general/theme  -t string -s $1
+	xfconf-query -c xsettings -p /Net/IconThemeName -t string -s $2
+}
+
+case "$1" in
+
+	light)
+	change_theme $LIGHT $LIGHT_ICONS
+	terminal_bright FALSE
+	;;
+
+	dark)
+	change_theme $DARK $DARK_ICONS
+	terminal_bright TRUE
+	;;
+
+	*)
+	echo "Opciones"
+	echo " - light"
+	echo " - dark"
+	;;
+esac
+
+#sleep 3
+#pkill xfce4-clipman
+#xfce4-clipman 2&>/dev/null
+
