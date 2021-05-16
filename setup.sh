@@ -11,7 +11,7 @@ echo "#####################"
 echo "# INSTALLING THEMES #"
 echo "#####################"
 
-#source install-themes.sh
+source install-themes.sh
 
 echo " "
 echo "#####################"
