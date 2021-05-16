@@ -1,7 +1,6 @@
-#favorites=org.gnome.TwentyFortyEight.desktop,xfce4-about.desktop,aseprite.desktop,org.gnome.Calculator.desktop,xfce4-file-manager.desktop,gparted.desktop,htop.desktop,libreoffice-writer.desktop,microsoft-edge-dev.desktop,teams.desktop,mousepad.desktop,xfce4-web-browser.desktop,pico8.desktop,supertuxkart.desktop,veusz.desktop,vim.desktop,Zoom.desktop
+#favorites=org.gnome.TwentyFortyEight.desktop,xfce4-about.desktop,audacity.desktop,org.gnome.Calculator.desktop,xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,godot.desktop,org.inkscape.Inkscape.desktop,org.gnome.Mines.desktop,xfce4-web-browser.desktop,puddletag.desktop,vlc.desktop,texstudio.desktop,typora.desktop,urw.desktop,Zoom.desktop,veusz.desktop
 
-favorites=xfce4-about.desktop,xfce4-web-browser.desktop,xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-mail-reader.desktop,
-
+favorites=xfce4-about.desktop,xfce4-web-browser.desktop,xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-mail-reader.desktop
 button-icon=start-here
 button-single-row=false
 show-button-title=false

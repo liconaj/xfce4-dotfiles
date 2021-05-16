@@ -5,6 +5,6 @@ noWindowsListIfSingle=false
 forceIconSize=true
 iconSize=24
 pinned=/usr/share/applications/thunar.desktop;/usr/share/applications/xfce4-web-browser.desktop;/usr/share/applications/xfce4-terminal.desktop
-#pinned=/usr/share/applications/thunar.desktop;/usr/share/applications/xfce4-terminal.desktop;/usr/share/applications/google-chrome.desktop;/usr/share/applications/org.gnome.Calculator.desktop;/usr/share/applications/visual-studio-code.desktop;/usr/share/applications/sublime_text.desktop;/usr/share/applications/vim.desktop;/usr/share/applications/mousepad.desktop;/home/josue/.local/share/applications/pico8.desktop;/usr/share/applications/htop.desktop;/usr/share/applications/dwarffortress.desktop;/usr/share/applications/xfmpc.desktop;
+#pinned=/usr/share/applications/thunar.desktop;/usr/share/applications/xfce4-terminal.desktop;/usr/share/applications/google-chrome.desktop;/usr/share/applications/mousepad.desktop;/home/josue/.local/share/applications/emacs.desktop;/home/josue/.local/share/applications/pico8.desktop;/usr/share/applications/htop.desktop;/usr/share/applications/dwarffortress.desktop;/usr/share/applications/xfmpc.desktop;
 keyComboActive=false
 keyAloneActive=false

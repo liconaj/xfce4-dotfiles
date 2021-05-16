@@ -11,7 +11,7 @@ echo "#####################"
 echo "# INSTALLING THEMES #"
 echo "#####################"
 
-source install-themes.sh
+#source install-themes.sh
 
 echo " "
 echo "#####################"
@@ -38,4 +38,4 @@ echo ""
 echo "Done"
 echo "You may have to restart to see all the changes..."
 echo "Use `settheme` and `menu-icon` in order to change appareance easily"
-echo "Enjoy"
+$echo "Enjoy"
