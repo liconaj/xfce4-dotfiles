@@ -30,5 +30,5 @@ ColorBackground=#232327273030
 FontName=Inconsolata Semi-Bold 12
 ColorBoldUseDefault=FALSE
 ColorBoldIsBright=TRUE
-ColorUseTheme=TRUE
+ColorUseTheme=FALSE
 
