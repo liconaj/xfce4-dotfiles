@@ -1,6 +1,6 @@
 #!/bin/sh
 
-
+CLIPMAN=yes
 
 LIGHT="Lim-Blue"
 DARK="Lim-Blue-Dark"
@@ -32,12 +32,12 @@ case "$1" in
 
 	light)
 	change_theme $LIGHT $LIGHT_ICONS
-	terminal_bright FALSE
+	#terminal_bright FALSE
 	;;
 
 	dark)
 	change_theme $DARK $DARK_ICONS
-	terminal_bright TRUE
+	#terminal_bright TRUE
 	;;
 
 	*)
@@ -47,7 +47,8 @@ case "$1" in
 	;;
 esac
 
-#sleep 3
-#pkill xfce4-clipman
-#xfce4-clipman 2&>/dev/null
-
+if [ $CLIPMAN == "yes" ]; then
+		sleep 3
+		pkill xfce4-clipman
+		xfce4-clipman 2&>/dev/null
+fi

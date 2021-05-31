@@ -26,9 +26,7 @@ MiscSlimTabs=FALSE
 MiscNewTabAdjacent=FALSE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
-ColorBackground=#232327273030
-FontName=Inconsolata Semi-Bold 12
+ColorBackground=#000000000000
 ColorBoldUseDefault=FALSE
-ColorBoldIsBright=TRUE
-ColorUseTheme=FALSE
+FontUseSystem=TRUE
 
