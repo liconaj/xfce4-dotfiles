@@ -28,18 +28,20 @@ fi
 cp -r Lim-Blue/Lim-* $THEMES_DIR
 
 
-# Papirus Icon theme
-echo ""
-echo "Installing Papirus Icon theme..."
+if [[ ! -d $ICONS_DIR/Papirus && ! -d $ICONS_DIR/Papirus-Light && ! -d $ICONS_DIR/Papirus-Dark ]]; then
+	# Papirus Icon theme
+	echo ""
+	echo "Installing Papirus Icon theme..."
 
-if [ ! -d $ICONS_DIR/Papirus ]; then
-	wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR=$ICONS_DIR sh
+	if [ ! -d $ICONS_DIR/Papirus ]; then
+		wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR=$ICONS_DIR sh
+	fi
+
 fi
 
+cd ..
 echo "Installing Papirus-folders script..."
 wget -qO- https://git.io/papirus-folders-install | sh
-
-cd ..
 
 echo "Patching icon theme"
 source patch_icons.sh
