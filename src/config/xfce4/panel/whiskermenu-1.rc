@@ -1,4 +1,4 @@
-#favorites=org.gnome.TwentyFortyEight.desktop,xfce4-about.desktop,audacity.desktop,org.gnome.Calculator.desktop,xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,godot.desktop,org.inkscape.Inkscape.desktop,org.gnome.Mines.desktop,xfce4-web-browser.desktop,puddletag.desktop,vlc.desktop,texstudio.desktop,typora.desktop,urw.desktop,Zoom.desktop,veusz.desktop
+#favorites=org.gnome.TwentyFortyEight.desktop,xfce4-about.desktop,audacity.desktop,brave-browser.desktop,org.gnome.Calculator.desktop,emacs.desktop,xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,godot.desktop,org.inkscape.Inkscape.desktop,mousepad.desktop,xfce4-web-browser.desktop,simplescreenrecorder.desktop,supertuxkart.desktop,visual-studio-code.desktop,org.gnome.Epiphany.desktop,Zoom.desktop
 
 favorites=xfce4-about.desktop,xfce4-web-browser.desktop,xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-mail-reader.desktop
 button-icon=start-here
