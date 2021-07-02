@@ -63,14 +63,14 @@ if [ "$FONTS" == "yes" ]; then
     	echo ""
 
 
-	echo "Font: Roboto 10"
-	xfconf-query -c xsettings -np /Gtk/FontName -t string -s "Roboto 10"
+	echo "Font: Noto Sans 10"
+	xfconf-query -c xsettings -np /Gtk/FontName -t string -s "Noto Sans 10"
 
-	echo "Title font: Droid Sans Bold 10"
-	xfconf-query -c xfwm4 -np /general/title_font -t string -s "Droid Sans Bold 10"
+	echo "Title font: Noto Sans Bold 10"
+	xfconf-query -c xfwm4 -np /general/title_font -t string -s "Noto Sans Bold 10"
 
-	echo "Monospace font: Inconsolata SemiBold 10"
-	xfconf-query -c xsettings -np /Gtk/MonospaceFontName -t string -s "Inconsolata SemiBold 10"
+	echo "Monospace font: Fantasque Sans Mono Regular 11"
+	xfconf-query -c xsettings -np /Gtk/MonospaceFontName -t string -s "Fantasque Sans Mono Regular 11"
 
 	echo "Font tweaks"
 	echo "	Antialias: 1"
@@ -151,7 +151,7 @@ if [ "$PANEL" == "yes" ]; then
 
 	echo "9 - Notifications"
 	xfconf-query -c xfce4-panel -np /plugins/plugin-9 -t string -s "notification-plugin"
-	
+
     	echo ""
 	echo "Copying configuration files in $HOME/.config/xfce4 ..."
 	cp -r src/config/xfce4/* ~/.config/xfce4
@@ -174,10 +174,10 @@ fi
 if [ "$BACKGROUNDS" == "yes" ]; then
     	echo "" && echo ""
 	if [ "$EUID" == "0" ]; then
-		echo "Copying wallpapers in /usr/share/backgrounds..." 
+		echo "Copying wallpapers in /usr/share/backgrounds..."
 		cp -r -b src/backgrounds/* /usr/share/backgrounds
 	else
-		sudo cp -r src/backgrounds/* /usr/share/backgrounds && echo "Copying wallpapers in /usr/share/backgrounds..." 
+		sudo cp -r src/backgrounds/* /usr/share/backgrounds && echo "Copying wallpapers in /usr/share/backgrounds..."
 	fi
 fi
 
@@ -186,7 +186,7 @@ if [ "$LIGHTDM" == "yes" ]; then
 	if [ "$EUID" == "0" ]; then
 		echo "Copying lightdm-gtk-greeter configuration to /etc/lightdm/lightdm-gtk-greeter.conf"
 		cp -r -b src/config/lightdm/* /etc/lightdm/
-	else 
+	else
 		echo "You need to be execute this as sudo in order to copy lightdm-gtk-greeter config"
 		echo "Also keep in mind you need Lim-Blue theme installed in /usr/share/themes"
 	fi
